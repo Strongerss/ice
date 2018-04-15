@@ -13,12 +13,14 @@ module.exports = {
   // add your custom rules here
   rules: {
     'space-before-function-paren': [
-      2,
+      0,
       {
         anonymous: 'always',
-        named: 'never'
+        named: 'none',
+        asyncArrow: "always"
       }
     ],
+    'no-return-await': 0
   },
   globals: {}
 }
